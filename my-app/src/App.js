@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
 
 const descriptions = {
     aiOrchestration: `
@@ -39,8 +40,9 @@ function App() {
     const showDescription = (part) => {
         setDescription(descriptions[part]);
     };
-
+    <Navbar />
     return (
+        
         <div className="App">
             <div className="diagram">
                 <div className="part" onClick={() => showDescription('aiOrchestration')}>AI Orchestration</div>
