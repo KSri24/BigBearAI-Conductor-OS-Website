@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
 
 const descriptions = {
     aiOrchestration: `
@@ -39,16 +40,11 @@ function App() {
     const showDescription = (part) => {
         setDescription(descriptions[part]);
     };
-
+    
     return (
-        <div className="App">
-            <div className="diagram">
-                <div className="part" onClick={() => showDescription('aiOrchestration')}>AI Orchestration</div>
-                <div className="part" onClick={() => showDescription('dataOrchestration')}>Data Orchestration</div>
-                <div className="part" onClick={() => showDescription('sensorFusion')}>Sensor Fusion</div>
-            </div>
-            <div className="description" dangerouslySetInnerHTML={{ __html: description }}></div>
-        </div>
+    <>
+        <Navbar />
+    </>
     );
 }
 
