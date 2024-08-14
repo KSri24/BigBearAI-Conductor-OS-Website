@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0037ff; 
+  background-color: #3d5cb1; 
   color: #333;
 }
 
@@ -42,4 +42,27 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.content {
+  padding: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: left;
 }
