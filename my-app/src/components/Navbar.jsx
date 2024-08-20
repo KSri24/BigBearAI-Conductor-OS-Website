@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 
 function Navbar() {
+  
   return (
     <nav className="navbar">
       <div className='navbar_content'>
@@ -22,8 +23,8 @@ function Navbar() {
       
         <ul className="c-navbar__desktop__navigation__menu__parent">
           <li><a href="#overview">Overview</a></li>
-          <li><a href="#diagram">Diagram Section</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="#diagram">Diagram</a></li>
+          <li><a href="#contact-us">Contact</a></li>
         </ul>
       </div>
     </nav>

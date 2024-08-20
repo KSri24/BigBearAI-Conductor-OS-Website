@@ -34,6 +34,8 @@ const descriptions = {
     `
 };
 
+
+
 function App() {
     const [description, setDescription] = useState('');
 
@@ -51,8 +53,13 @@ function App() {
                 <button onClick={() => showDescription('sensorFusion')}>Sensor Fusion</button>
                 <div className="description" dangerouslySetInnerHTML={{ __html: description }}></div> */}
             </div>
+
+            
         </div>
     );
+
+
+
 }
 
 export default App;
