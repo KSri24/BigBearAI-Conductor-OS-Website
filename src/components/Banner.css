@@ -44,4 +44,22 @@
     background-color: rgba(0, 0, 0, 0.3); /* Adjust this for overlay opacity */
     z-index: 1;
   }
+
+/* Text overlay on top of the banner */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
+}
+
+.banner-text p {
+  color: white;
+}
   

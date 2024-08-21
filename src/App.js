@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
-import './components/diagram_component.css';
+import diagram_component from './components/diagram_component';
+import Overview from './components/Overview';
 
 const descriptions = {
     aiOrchestration: `
@@ -50,16 +51,18 @@ function App() {
 
             <Navbar/>
             <Banner/>
+            <Overview/>
+            <diagram_component/>
+
             <div className="content">
+                {/* Overview Section
+                <section id="overview" className="section overview-section">
+                    <h2>Overview</h2>
+                    <p>This is the overview section content.</p>
+                </section> */}
+
 
             </div>
-
-            <section id="interactive-diagram" class="full-page-section">
-                <h2>Interactive Diagram</h2>
-                <div class="diagram-container">
-                    
-                </div>
-            </section>
 
         </div>
     );

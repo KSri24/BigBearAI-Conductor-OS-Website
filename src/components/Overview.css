@@ -1,0 +1,43 @@
+/* Overview container */
+.overview-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each section takes up 100vh (full viewport height) */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Styling for section 1 */
+.section-1 {
+    background-color: #3498db; /* Light blue background */
+}
+
+/* Styling for section 2 */
+.section-2 {
+    background-color: #2ecc71; /* Green background */
+}
+
+/* Styling for section 3 */
+.section-3 {
+    background-color: #e74c3c; /* Red background */
+}
+
+/* Optional: styling for section content */
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
