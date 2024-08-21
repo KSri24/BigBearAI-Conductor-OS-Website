@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 import './components/diagram_component.css';
 
 const descriptions = {
@@ -48,8 +49,7 @@ function App() {
         <div className="App">
 
             <Navbar/>
-
-            
+            <Banner/>
             <div className="content">
 
             </div>
