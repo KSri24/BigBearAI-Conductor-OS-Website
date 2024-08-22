@@ -12,22 +12,22 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    color: white;
+    color: #0037ff;
 }
 
 /* Styling for section 1 */
 .section-1 {
-    background-color: #3498db; /* Light blue background */
+    background-color: #0037ff; /* Light blue background */
 }
 
 /* Styling for section 2 */
 .section-2 {
-    background-color: #2ecc71; /* Green background */
+    background-color: #0037ff; /* Green background */
 }
 
 /* Styling for section 3 */
 .section-3 {
-    background-color: #e74c3c; /* Red background */
+    background-color: #0037ff; /* Red background */
 }
 
 /* Optional: styling for section content */
