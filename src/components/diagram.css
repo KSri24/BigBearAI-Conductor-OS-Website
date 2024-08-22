@@ -1,0 +1,43 @@
+/* Overview container */
+.overview-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each section takes up 100vh (full viewport height) */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Styling for section 1 */
+.diagram_section-1 {
+    background-color: #0037ff; /* Light blue background */
+}
+
+/* Optional: styling for section content */
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.N{
+    color: #ffffff;
+    
+
+}
+
+.dtext{
+    color: #ffffff;
+}

@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
-import diagram_component from './components/diagram_component';
 import Overview from './components/Overview';
+import Diagram from './components/diagram';
+import Contact from './components/contact';
 
 const descriptions = {
     aiOrchestration: `
@@ -52,7 +53,8 @@ function App() {
             <Navbar/>
             <Banner/>
             <Overview/>
-            <diagram_component/>
+            <Diagram/>
+            <Contact/>
 
             <div className="content">
                 {/* Overview Section
