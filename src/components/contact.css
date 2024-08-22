@@ -1,0 +1,46 @@
+/* Overview container */
+.overview-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each section takes up 100vh (full viewport height) */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #0037ff;
+}
+
+/* Styling for section 1 */
+.contact_section {
+    background-color: #000000; /* Light blue background */
+}
+
+/* Optional: styling for section content */
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.c{
+    position: absolute;
+    margin-top: -70rem;
+    color: #ffffff;
+
+}
+
+.ctext{
+    position: absolute;
+    margin-left: -20rem;
+    color: #ffffff;
+}
