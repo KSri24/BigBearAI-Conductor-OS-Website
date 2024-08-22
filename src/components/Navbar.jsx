@@ -22,7 +22,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : 'at-top'}`}>
       <div className='navbar_content'>
         <div className='logo_container'>
           <div className="navbar_logo">

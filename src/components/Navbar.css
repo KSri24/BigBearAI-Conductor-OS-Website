@@ -10,6 +10,8 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  
   
   .navbar.scrolled {
     background-color: black;
@@ -111,5 +113,118 @@
     background-color: #fff;
     border-radius: 4px;
     border: 2px solid black; /* Add this line to create the border */
+  }
+
+
+  /* Navbar default styles */
+.navbar {
+    background-color: transparent;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.25s ease-in;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  /* Navbar when scrolled */
+  .navbar.scrolled {
+    background-color: black;
+  }
+  
+  /* Navbar hover effect when at the top of the page */
+  .navbar.at-top:hover {
+    background-color: white;
+  }
+  
+  /* Navbar link hover effect */
+  .c-navbar__desktop__navigation__menu__parent a:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  
+  /* Navbar link color when at the top of the page and hovered */
+  .navbar.at-top .c-navbar__desktop__navigation__menu__parent a {
+    color: #0037ff;
+  }
+  
+  .navbar.at-top .c-navbar__desktop__navigation__menu__parent a:hover {
+    color: #000;
+    background-color: #fff;
+    border: 2px solid black;
+  }
+  
+  
+  /* Navbar default styles */
+.navbar {
+    background-color: transparent;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.25s ease-in;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  /* Navbar when scrolled */
+  .navbar.scrolled {
+    background-color: black;
+  }
+  
+  /* Navbar hover effect when at the top of the page */
+  .navbar.at-top:hover {
+    background-color: white;
+  }
+
+  
+  
+  /* Navbar link hover effect */
+  .c-navbar__desktop__navigation__menu__parent a:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  
+  /* Navbar link color when at the top of the page and hovered */
+  .navbar.at-top .c-navbar__desktop__navigation__menu__parent a {
+    color: #ffffff;
+  }
+
+  .navbar.at-top:hover a {
+    color: black;
+  }
+  
+  .navbar.at-top .c-navbar__desktop__navigation__menu__parent a:hover {
+    color: #000;
+    background-color: #fff;
+    border: 2px solid black;
+  }
+  
+  /* Light logo when at the top */
+  .navbar.at-top .c-navbar__desktop__logo__img--light {
+    display: block;
+  }
+  
+  .navbar.at-top .c-navbar__desktop__logo__img--dark {
+    display: none;
+    
+  }
+  
+  /* Switch to dark logo on hover */
+  .navbar.at-top:hover .c-navbar__desktop__logo__img--light {
+    display: none;
+  }
+  
+  .navbar.at-top:hover .c-navbar__desktop__logo__img--dark {
+    display: block;
   }
   
