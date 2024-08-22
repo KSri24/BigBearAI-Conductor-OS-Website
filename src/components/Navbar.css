@@ -102,7 +102,7 @@
   
   /* Make the navigation links black when the navbar is hovered */
   .navbar:hover .c-navbar__desktop__navigation__menu__parent a {
-    color: black;
+    color: #0037ff;
   }
   
   /* Add a border to the navigation links when hovered */
