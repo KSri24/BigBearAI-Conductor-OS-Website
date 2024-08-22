@@ -1,0 +1,13 @@
+/* Initial state: slide elements out of view */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100px); /* Slide from left */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Animation duration and easing */
+  }
+  
+  /* When element is visible, apply this class to slide it in */
+  .slide-in.visible {
+    opacity: 1;
+    transform: translateX(0); /* Slide to original position */
+  }
+  
