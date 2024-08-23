@@ -57,7 +57,7 @@ const Overview = () => {
   }, []);
 
   return (
-    <div className="overview">
+    <div id="overview">
       <Section
         className={`section-1 ${isExpanded ? 'expanded' : ''}`}
         sectionRef={(el) => (sectionRefs.current[0] = el)}

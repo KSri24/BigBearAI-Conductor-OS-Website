@@ -39,7 +39,7 @@ const Section = ({ children, className }) => {
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact-us">
       <Section className="contact_section">
         <div>
           <h2 className="c">Contact Us</h2>
@@ -50,7 +50,13 @@ const Contact = () => {
             and effectiveness. Lastly, we decided to create this website with an interactive diagram to help visually present the capabilities of Conductor OS.
           </p>
         </div>
-        <img className="image" src={image} width="550" height="730" alt="Conductor OS Diagram" />
+        <figure>
+          <img className="image" src={image} width="550" height="730" alt="Conductor OS Diagram" />
+          <div className="caption">
+          <figcaption>Joshua Cancio (left)</figcaption>
+          <figcaption>Sriram Koduru (right)</figcaption>
+          </div>
+        </figure>
       </Section>
     </div>
   );

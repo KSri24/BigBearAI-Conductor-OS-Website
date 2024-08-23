@@ -35,6 +35,30 @@ p {
     line-height: 1.6;
 }
 
+figure {
+    text-align: center; /* Center the image and caption */
+    margin: 20px 0;
+  }
+  
+  figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc; /* You can adjust this color for better visibility */
+  }  
+
+  .caption {
+    display: flex;       /* Arrange items in a row */
+    justify-content: center; /* Center the captions horizontally */
+    gap: 50px;           /* Add space between the captions */
+    margin-top: 10px;    /* Add some margin above the captions */
+  }
+  
+  .caption figcaption {
+    font-size: 1rem;
+    color: #ccc;         /* Adjust the color if necessary */
+  }
+  
+
 /* Align the heading and text without absolute positioning */
 /* Contact Section Styling */
 .contact_section {
