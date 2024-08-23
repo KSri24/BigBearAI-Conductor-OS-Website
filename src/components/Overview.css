@@ -1,60 +1,74 @@
+/* Default padding for section 2 */
+.section-2 {
+    background-color: #0037ff; /* Blue background */
+    padding: 20px;
+    color: white;
+    padding-bottom: 50rem;
+    padding-top: 20rem; /* Default top padding */
+    position: relative;
+    transition: padding-top 0.3s ease; /* Smooth transition for padding */
+    /* margin-bottom: 20rem; */
+}
+
+/* Add more padding when dropdown is open */
+.section-2.expanded {
+    padding-top: 30.5rem; /* Increased top padding */
+    padding-bottom: 22rem;
+}
+
 /* Common styles for sections */
 .section {
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     text-align: center;
-    padding: 20px;
+    padding: 20px; /* Padding inside each section */
     color: #0037ff;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  
-  .section.visible {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Initially offset */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+    position: relative; /* Ensure stacking context for z-index if needed */
+}
+
+.section.visible {
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  /* Styling for section 1 */
-  .section-1 {
+}
+
+/* Styling for section 1 */
+.section-1 {
     background-color: #0037ff; /* Blue background */
-  }
-  
-  .section-1 p,
-  .section-1 h2 {
     color: white;
+}
+
+.section-1 p,
+.section-1 h2 {
     text-align: left;
-  }
-  
-  /* Styling for section 2 */
-  .section-2 {
-    background-color: #0037ff; /* Blue background */
-    padding: 20px;
-    color: white;
-    padding-bottom: 30rem;
-    margin-bottom: 20rem;
-  }
-  
-  .text-content p {
+}
+
+/* Text content alignment */
+.text-content p {
     text-align: left;
-  }
-  
-  .text-content {
+}
+
+.text-content {
+    justify-content: flex-start;
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  /* Dropdown container */
-  .dropdown-container {
+    margin-left: 10rem;
+}
+
+/* Dropdown container */
+.dropdown-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Aligned with heading */
     gap: 20px; /* Space between dropdown items */
+    margin-left: 10rem; /* Same alignment as content */
     margin-top: 20px;
-  }
-  
-  .dropdown-toggle {
+}
+
+.dropdown-toggle {
     cursor: pointer;
     padding: 10px 20px;
     background-color: #000000; /* Button style */
@@ -62,68 +76,66 @@
     border-radius: 5px;
     font-size: 16px;
     color: #ffffff; /* Text color */
-  }
-  
-  .dropdown-content {
+}
+
+/* Styling for section 2 */
+
+
+/* Dropdown content */
+.dropdown-content {
     background-color: #0037ff; /* Match section background */
     color: white; /* Match section text color */
     padding: 20px;
     width: 100%;
     margin-top: 10px;
-  }
-  
-  /* Optional: styling for section content */
-  h2 {
+    margin-bottom: 60px; /* Added margin to ensure space between sections */
+}
+
+/* Grid layout for AI content */
+.ai-content-grid {
+    border-radius: 10rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap if necessary */
+    justify-content: space-between; /* Distribute items evenly */
+    padding: 1rem 10rem 0rem 10rem; /* Adjust padding as needed */
+    background-color: #f9f9f9; /* Optional background color */
+    width: 100%; /* Take up the full width of the page */
+    max-width: 100%; /* Remove max-width restriction */
+    margin: 0 auto; /* Center the container */
+}
+
+.ai-item {
+    flex: 1; /* Items will take up equal space */
+    min-width: 300px; /* Ensure a minimum width for items */
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+}
+
+
+
+.ai-content p {
+    margin-bottom: 15px; /* Space between paragraphs */
+    line-height: 1.6; /* Better line spacing */
+    color: black;
+}
+
+.ai-content strong {
+    color: #0037ff; /* Highlighted text */
+}
+
+/* Optional: styling for section content */
+h2 {
+    color: white;
     font-size: 3rem;
     margin-bottom: 1rem;
     padding: 2rem;
-  }
-  
-  p {
+}
+
+p {
+    color: white;
     font-size: 1.5rem;
     max-width: 800px;
     line-height: 1.6;
     text-align: center;
-  }
-  
-
-  .ai-content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    grid-gap: 20px; /* Space between items */
-    padding: 20px;
-    background-color: #f9f9f9; /* Optional background color */
-    width: 90%; /* Make the container take up 90% of the page width */
-    max-width: 100rem; /* Optional: Set a maximum width */
-    margin: 0 auto; /* Center the container */
-  }
-  
-  
-  
-  .ai-content p {
-    margin-bottom: 15px; /* Space between paragraphs */
-    line-height: 1.6; /* Better line spacing */
-  }
-  
-  .ai-content strong {
-    color: #0037ff; /* Highlighted text */
-  }
-  
-  .ai-content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    grid-gap: 20px; /* Space between items */
-    padding: 1rem 10rem 0rem 10rem;
-    background-color: #f9f9f9; /* Optional background color */
-  }
-
-  /*Top Right Bottom Left*/
-
-  .ai-item {
-    padding-left: 1.5rem;
-    width: 100%;
-    color: black;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
+}

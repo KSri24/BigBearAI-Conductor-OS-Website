@@ -15,6 +15,11 @@ const Overview = () => {
 
   const handleToggle = (section) => {
     setActiveSection(activeSection === section ? null : section);
+    const section2 = sectionRefs.current[1];
+    
+    if (section2) {
+      section2.classList.toggle('expanded', activeSection !== section);
+    }
   };
 
   useEffect(() => {
@@ -87,44 +92,42 @@ const Overview = () => {
             </button>
           </div>
           <div className="dropdown-content">
-          {activeSection === 'AI' && (
-            <div className="ai-content">
-            <div className="ai-content-grid">
-  <div className="ai-item">
-    <p>
-      <strong>1. Integration of Multiple AI Models and Systems:</strong><br />
-      ConductorOS combines different AI models, such as machine learning, natural language processing, 
-      and computer vision systems, to work together seamlessly. The orchestration ensures that data flows 
-      between these systems occur in a coordinated manner, optimizing performance and reducing inefficiencies.
-    </p>
-  </div>
-  <div className="ai-item">
-    <p>
-      <strong>2. Resource Allocation and Management:</strong><br />
-      Efficient management of computational resources, such as CPU, GPU, and memory resources, is a crucial 
-      component. ConductorOS allocates these edge resources judiciously to various AI tasks to maximize 
-      throughput and minimize cost and latency.
-    </p>
-  </div>
-  <div className="ai-item">
-    <p>
-      <strong>3. Scaling and Adaptability:</strong><br />
-      ConductorOS can scale to meet the demands of different environments and adapt to changing conditions 
-      in real-time, making it highly flexible for various applications.
-    </p>
-  </div>
-  <div className="ai-item">
-    <p>
-      <strong>4. Monitoring and Maintenance:</strong><br />
-      Continuous monitoring and proactive maintenance ensure that AI systems remain operational and perform 
-      at their best, with minimal downtime.
-    </p>
-  </div>
-</div>
-</div>
-
-)}
-
+            {activeSection === 'AI' && (
+              <div className="ai-content">
+                <div className="ai-content-grid">
+                  <div className="ai-item">
+                    <p>
+                      <strong>1. Integration of Multiple AI Models and Systems:</strong><br />
+                      ConductorOS combines different AI models, such as machine learning, natural language processing, 
+                      and computer vision systems, to work together seamlessly. The orchestration ensures that data flows 
+                      between these systems occur in a coordinated manner, optimizing performance and reducing inefficiencies.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>2. Resource Allocation and Management:</strong><br />
+                      Efficient management of computational resources, such as CPU, GPU, and memory resources, is a crucial 
+                      component. ConductorOS allocates these edge resources judiciously to various AI tasks to maximize 
+                      throughput and minimize cost and latency.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>3. Scaling and Adaptability:</strong><br />
+                      ConductorOS can scale to meet the demands of different environments and adapt to changing conditions 
+                      in real-time, making it highly flexible for various applications.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>4. Monitoring and Maintenance:</strong><br />
+                      Continuous monitoring and proactive maintenance ensure that AI systems remain operational and perform 
+                      at their best, with minimal downtime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
             {activeSection === 'Data' && <p>Here's some exciting info about Data Orchestration!</p>}
             {activeSection === 'Sensor' && <p>Discover the amazing world of Sensor Fusion here!</p>}
           </div>
