@@ -1,0 +1,98 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 3rem;
+    margin-bottom: -2.5rem;
+    border: 50rem;
+  }
+
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo img {
+    width: 167px;
+    height: 67px;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-menu li {
+    margin: 0 15px;
+  }
+  
+  .footer-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-menu li a:hover {
+    color: #0037ff;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+  }
+
+  .footer-header {
+    display: flex;       /* Arrange items in a row */
+    justify-content: center; /* Center the captions horizontally */
+    margin-top: 10px;    /* Add some margin above the captions */
+    gap: 250px;
+    margin-right: 1.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .footer-info {
+    display: flex;       /* Arrange items in a row */
+    /* padding: 0rem 1.5rem 0rem 1.5rem; */
+    gap: 150px;
+    justify-content: center; /* Center the captions horizontally */
+    margin-top: 10px;    /* Add some margin above the captions */
+  }
+
+  .footer-info p {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 10px; /* Adds space between each set of contact details */
+  }
+  
+  .footer-info p span {
+    font-size: 19px;
+    margin-bottom: 5px; /* Adds space between email, LinkedIn, and phone number */
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 19.5rem;
+    text-decoration: underline;
+    gap: 205px;
+  }
+
+  .caption {
+    display: flex;       /* Arrange items in a row */
+    justify-content: center; /* Center the captions horizontally */
+    gap: 50px;           /* Add space between the captions */
+    margin-top: 10px;    /* Add some margin above the captions */
+  }
+  

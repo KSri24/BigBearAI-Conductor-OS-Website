@@ -5,6 +5,7 @@ import Banner from './components/Banner';
 import Overview from './components/Overview';
 import Diagram from './components/diagram';
 import Contact from './components/contact';
+import Footer from './components/Footer';
 
 const descriptions = {
     aiOrchestration: `
@@ -55,6 +56,7 @@ function App() {
             <Overview/>
             <Diagram/>
             <Contact/>
+            <Footer/>
 
             <div className="content">
                 {/* Overview Section

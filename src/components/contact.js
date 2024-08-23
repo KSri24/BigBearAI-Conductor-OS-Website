@@ -50,7 +50,13 @@ const Contact = () => {
             and effectiveness for assessments. Lastly, we decided to create a website with an interactive diagram as well to help better bridge the gap in knowledge for Conductor OS capabilities.
           </p>
         </div>
-        <img className="image" src={image} width="550" height="730" alt="Conductor OS Diagram" />
+        <figure>
+          <img className="image" src={image} width="550" height="730" alt="Conductor OS Diagram" />
+          <div className="caption">
+          <figcaption>Joshua Cancio (left)</figcaption>
+          <figcaption>Sriram Koduru (right)</figcaption>
+          </div>
+        </figure>
       </Section>
     </div>
   );
