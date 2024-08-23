@@ -39,7 +39,7 @@ const Section = ({ children, className }) => {
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact-us">
       <Section className="contact_section">
         <div>
           <h2 className="c">Contact Us</h2>

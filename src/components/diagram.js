@@ -39,7 +39,7 @@ const Section = ({ children, className }) => {
 
 const diagram = () => {
   return (
-    <div className="diagram">
+    <div id="diagram">
       <Section className="diagram_section-1">
         <h2 className="dHeading">Interactive Diagram</h2>
         <img className="diagramImage" src={image} width="900" height="730" alt="Diagram" />

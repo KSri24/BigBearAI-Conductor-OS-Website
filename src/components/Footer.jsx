@@ -16,8 +16,20 @@ function Footer() {
             <p><span>srikoduru@hotmail.com</span><span>linkedin.com/in/sriramkoduru </span><span>571-208-6845</span></p>
         </div>  
         <p className="resume">
-                <span>Joshua's Resume</span>
-                <span>Sriram's Resume</span>
+                <span><a href="https://drive.google.com/file/d/1m9zvLsMuKa7Q-mVVdXkWaIu3uWcOl8t2/view?usp=sharing" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   class="resume-button">
+  Joshua's Resume
+</a>
+</span>
+                <span><a href="https://drive.google.com/file/d/1iF26ipDsAFbyZmSrEzNMd1Ye6uVDZagE/view?usp=sharing" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   class="resume-button">
+  Sriram's Resume
+</a>
+</span>
             </p>
       <div className="footer-content">
 
