@@ -62,8 +62,8 @@ const Overview = () => {
         className={`section-1 ${isExpanded ? 'expanded' : ''}`}
         sectionRef={(el) => (sectionRefs.current[0] = el)}
       >
-        <h2>The Challenge</h2>
-        <p>
+        <h2 className='challengetitle'>The Challenge</h2>
+        <p className='challengetxt'>
           Massive amounts of data are available to be leveraged by operators to increase
           situational awareness and make critical decisions; however, this data is typically
           sourced from different systems/sensors and is in various formats. This surplus of

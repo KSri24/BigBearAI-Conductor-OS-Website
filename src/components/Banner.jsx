@@ -10,8 +10,8 @@ export default function Banner() {
       </video>
 
       <div className="banner-text">
-          <h1>Conductor OS</h1>
-          <p>Orchestrating AI and Data for the Future</p>
+          <h1 className='Title'>Conductor OS</h1>
+          <p className='TitleText'>Orchestrating AI and Data for the Future</p>
       </div>
 
       <div className='overlay' />
