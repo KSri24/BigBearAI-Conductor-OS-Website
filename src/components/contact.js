@@ -37,21 +37,23 @@ const Section = ({ children, className }) => {
   );
 };
 
-const contact = () => {
+const Contact = () => {
   return (
     <div className="contact">
       <Section className="contact_section">
-        <h2 className='c'>Contact Us</h2>
-        <p className='ctext'>Joshua Cancio and I, Sriram Koduru, worked as DoD OUSD Technology Readiness Assessors for multiple technologies, including BigBear AI's Conductor OS, during the T-REX 24-2 event this past summer.
-                                During the assessment and documentation process, we noticed that there was a gap in knowledge regarding software applications and how to assess them. So Josh and I decied that we could use
-                                our Computer Science background to serve as Software SME's to help the other assessors formulate an assessment plan. We were able to help form relevant and targeted measures of performance 
-                                and effectiveness for assessments. Lastly, we decided to create a website with an interactive diagram as well to help better bridge the gap in knowledge for Conductor OS capabilities.</p>
+        <div>
+          <h2 className="c">Contact Us</h2>
+          <p className="ctext">
+            Joshua Cancio and I, Sriram Koduru, worked as DoD OUSD Technology Readiness Assessors for multiple technologies, including BigBear AI's Conductor OS, during the T-REX 24-2 event this past summer.
+            During the assessment and documentation process, we noticed that there was a gap in knowledge regarding software applications and how to assess them. So Josh and I decided that we could use
+            our Computer Science background to serve as Software SMEs to help the other assessors formulate an assessment plan. We were able to help form relevant and targeted measures of performance 
+            and effectiveness for assessments. Lastly, we decided to create a website with an interactive diagram as well to help better bridge the gap in knowledge for Conductor OS capabilities.
+          </p>
+        </div>
+        <img className="image" src={image} width="550" height="730" alt="Conductor OS Diagram" />
       </Section>
-
-      <img className="image" src={image} width="550" height="730" />
-
     </div>
   );
 };
 
-export default contact;
+export default Contact;
