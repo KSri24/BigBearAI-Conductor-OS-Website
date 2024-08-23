@@ -132,8 +132,8 @@ const Overview = () => {
                     <p>
                       <strong>AI Orchestration:</strong><br />
                       AI Orchestration refers to the coordinated management and integration of various AI systems
-and processes to achieve efficient, effective, and optimized outcomes. ConductorOS features
-enable several key aspects following this section.
+                        and processes to achieve efficient, effective, and optimized outcomes. ConductorOS features
+                        enable several key aspects following this section.
                     </p>
                   </div>
                   <div className="ai-item">
