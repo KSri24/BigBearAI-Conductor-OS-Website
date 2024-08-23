@@ -15,12 +15,15 @@
     color: #0037ff;
 }
 
-/* Styling for section 1 */
+/* Contact Section Styling */
 .contact_section {
-    background-color: #000000; /* Light blue background */
+    background-color: #000000;
+    margin-top: 20rem; /* Adjust this if necessary */
+    color: #ffffff;
+    padding: 5rem; /* Add padding to avoid content being too close to the edges */
 }
 
-/* Optional: styling for section content */
+/* Optional: Styling for section content */
 h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -32,15 +35,35 @@ p {
     line-height: 1.6;
 }
 
-.c{
-    position: absolute;
-    margin-top: -70rem;
+/* Align the heading and text without absolute positioning */
+/* Contact Section Styling */
+.contact_section {
+    background-color: #000000;
     color: #ffffff;
-
+    padding: 5rem; /* Add padding to avoid content being too close to the edges */
+    display: flex; /* Apply flexbox */
+    flex-direction: row; /* Align items in a row (side by side) */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between the text and image */
 }
 
-.ctext{
-    position: absolute;
-    margin-left: -20rem;
-    color: #ffffff;
+/* Optional: Styling for section content */
+.c {
+    font-size: 3rem;
+    margin-bottom: 2rem; /* Space between heading and text */
+}
+
+.ctext {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 600px; /* Control width for better readability */
+    margin: 0; /* Remove auto margin to align with the image */
+    text-align: left;
+}
+
+/* Image Styling */
+.image {
+    max-width: 550px; /* Ensure image doesn't take up too much space */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 2rem; /* Add space between the text and image */
 }
