@@ -69,6 +69,7 @@
 /* Text content alignment */
 .text-content p {
     text-align: left;
+    font-size: 20px;
 }
 
 .text-content {
@@ -81,11 +82,8 @@
     color: white;
     padding: 20px; /* Optional: add some padding */
     box-sizing: border-box; 
-    
-}
-
-.heading {
-    
+    margin-top: 20rem;
+    margin-bottom: 20rem;
 }
 
 /* Dropdown container */
@@ -97,6 +95,7 @@
     margin-top: 20px;
     align-items: center;
     padding-right: 10rem;
+    
     transition: none; /* Remove transitions */
 }
 
@@ -125,7 +124,6 @@
     border-radius: 5px;
     font-size: 16px;
     color: #ffffff; /* Text color */
-    position: sticky; /* Keeps the button in view */
     bottom: 20px; /* Adjust as needed */
     transition: none; /* Remove transitions */
 }
@@ -136,25 +134,41 @@
     color: white; /* Match section text color */
     padding: 20px;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 60px; /* Added margin to ensure space between sections */
+    margin-top: 10rem;
+    margin-bottom: 10rem; /* Added margin to ensure space between sections */
     transition: none; /* Remove transitions */
+}
+
+.dropdown-name {
+    /* text-decoration: underline; */
+    font-size: 1.5rem;
+    text-align: center;
+    color: aqua;
+}
+
+.heading p {
+    font-size: 25px;
 }
 
 /* Grid layout for AI content */
 .ai-content-grid {
-    border-radius: 10rem;
+    border-radius: 1rem;
     display: flex;
     flex-wrap: wrap; /* Allow content to wrap if necessary */
     justify-content: space-between; /* Distribute items evenly */
-    padding: 1rem 10rem 0rem 10rem; /* Adjust padding as needed */
+    padding: 2rem; /* Adjust padding for responsiveness */
+    padding-left: 2rem;
     background-color: #f9f9f9; /* Optional background color */
     width: 100%; /* Take up the full width of the page */
-    max-width: 100%; /* Remove max-width restriction */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
     margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Prevent overflow */
     transition: none; /* Remove transitions */
-    
+    padding-bottom: 50rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
 }
+
 
 .ai-item {
     flex: 1; /* Items will take up equal space */
@@ -175,7 +189,8 @@
     color: white;
     padding: 20px; /* Optional: add some padding */
     box-sizing: border-box; 
-    padding-right: 21rem;
+    padding-right: 1rem;
+    padding-bottom: 10rem;
     
 }
 .ai-content p {
@@ -187,6 +202,10 @@
 
 .ai-content strong {
     color: #0037ff; /* Highlighted text */
+}
+
+strong {
+    font-size: 1.5rem;
 }
 
 /* Optional: styling for section content */

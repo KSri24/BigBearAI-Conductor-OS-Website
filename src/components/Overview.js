@@ -128,6 +128,14 @@ const Overview = () => {
             {activeSection === 'AI' && (
               <div className="ai-content">
                 <div className="ai-content-grid">
+                <div className="ai-item">
+                    <p>
+                      <strong>AI Orchestration:</strong><br />
+                      AI Orchestration refers to the coordinated management and integration of various AI systems
+and processes to achieve efficient, effective, and optimized outcomes. ConductorOS features
+enable several key aspects following this section.
+                    </p>
+                  </div>
                   <div className="ai-item">
                     <p>
                       <strong>1. Integration of Multiple AI Models and Systems:</strong><br />
@@ -164,34 +172,41 @@ const Overview = () => {
             {activeSection === 'Data' && (
               <div className="ai-content">
                 <div className="ai-content-grid">
-                  <div className="ai-item">
+                <div className="ai-item">
                     <p>
-                      <strong>1. Integration of Multiple AI Models and Systems:</strong><br />
-                      ConductorOS combines different AI models, such as machine learning, natural language processing, 
-                      and computer vision systems, to work together seamlessly. The orchestration ensures that data flows 
-                      between these systems occur in a coordinated manner, optimizing performance and reducing inefficiencies.
+                      <strong>Data Orchestration:</strong><br />
+                      Data orchestration refers to the process of integrating and managing data from multiple
+sources to ensure that it is accessible, usable, and efficiently processed across different systems
+and applications in an organization. This concept is essential in complex data environments,
+such as operational mission spaces, where operators need to handle vast amounts of data
+stored in various formats and locations.
                     </p>
                   </div>
                   <div className="ai-item">
                     <p>
-                      <strong>2. Resource Allocation and Management:</strong><br />
-                      Efficient management of computational resources, such as CPU, GPU, and memory resources, is a crucial 
-                      component. ConductorOS allocates these edge resources judiciously to various AI tasks to maximize 
-                      throughput and minimize cost and latency.
+                      <strong>1. Data Integration:</strong><br />
+                      Data orchestration involves combining data from disparate sources, such
+as databases, cloud storage, and IoT devices. ConductorOS enables the structuring, cleansing,
+and consolidating of data as it is received at the edge, to create a unified view that can be easily
+accessed and used by downstream consumers.
                     </p>
                   </div>
                   <div className="ai-item">
                     <p>
-                      <strong>3. Scaling and Adaptability:</strong><br />
-                      ConductorOS can scale to meet the demands of different environments and adapt to changing conditions 
-                      in real-time, making it highly flexible for various applications.
+                      <strong>2. Scalability and Flexibility:</strong><br />
+                      ConductorOS is designed to be scalable and flexible,
+accommodating varying data volumes and changing requirements. This adaptability is crucial
+for scenarios that require flexible adaptability in data processing capabilities or adjusting to
+new data sources.
                     </p>
                   </div>
                   <div className="ai-item">
                     <p>
-                      <strong>4. Monitoring and Maintenance:</strong><br />
-                      Continuous monitoring and proactive maintenance ensure that AI systems remain operational and perform 
-                      at their best, with minimal downtime.
+                      <strong>3. Monitoring and Optimization:</strong><br />
+                      Continuous monitoring of the data orchestration processes is
+vital to identify and resolve issues, optimize data flow, and improve overall system
+performance. ConductorOS provides this functionality, tracking data movements, usage
+patterns, and performance metrics.
                     </p>
                   </div>
                 </div>
@@ -202,32 +217,49 @@ const Overview = () => {
                 <div className="ai-content-grid">
                   <div className="ai-item">
                     <p>
-                      <strong>1. Integration of Multiple AI Models and Systems:</strong><br />
-                      ConductorOS combines different AI models, such as machine learning, natural language processing, 
-                      and computer vision systems, to work together seamlessly. The orchestration ensures that data flows 
-                      between these systems occur in a coordinated manner, optimizing performance and reducing inefficiencies.
+                      <strong className="dropdown-name">Sensor Fusion</strong><br />
+                      Sensor fusion refers to the process used in systems that collect data from multiple sensory
+sources (such as cameras, radar, GPS, etc.) and combine this data into a comprehensive,
+accurate, and dependable view. This technique is crucial in various applications, including
+autonomous vehicles, robotics, and advanced surveillance systems, where making rapid and
+reliable decisions based on accurate real-time data is essential.
                     </p>
                   </div>
                   <div className="ai-item">
                     <p>
-                      <strong>2. Resource Allocation and Management:</strong><br />
-                      Efficient management of computational resources, such as CPU, GPU, and memory resources, is a crucial 
-                      component. ConductorOS allocates these edge resources judiciously to various AI tasks to maximize 
-                      throughput and minimize cost and latency.
+                      <strong>1. Data Combination & Error Reduction:</strong><br />
+                      ConductorOS enables sensor fusion by combining various disparate data
+streams to provide accurate perception, regardless of individual sensor limitations. By integrating data from multiple sources, ConductorOS reduces the
+likelihood of error that might arise from a single sensor. This increases the overall reliability of
+the sensory data, which is critical for safety in applications like autonomous driving.
                     </p>
                   </div>
                   <div className="ai-item">
                     <p>
-                      <strong>3. Scaling and Adaptability:</strong><br />
-                      ConductorOS can scale to meet the demands of different environments and adapt to changing conditions 
-                      in real-time, making it highly flexible for various applications.
+                      <strong>2. Improved Accuracy and Robustness:</strong><br />
+                      The combined data typically provide a more accurate
+representation of the environment than any single sensor could on its own. This improved
+accuracy is vital for precise navigation, object detection, and decision-making processes in
+automated systems. With ConductorOS, systems can also operate reliably under a wide range
+of environmental and wartime conditions (i.e. low bandwidth environments). By using multiple
+sensors, the system can still function even if one sensor type fails or provides poor data quality
+due to environmental constraints.
                     </p>
                   </div>
                   <div className="ai-item">
                     <p>
-                      <strong>4. Monitoring and Maintenance:</strong><br />
-                      Continuous monitoring and proactive maintenance ensure that AI systems remain operational and perform 
-                      at their best, with minimal downtime.
+                      <strong>3. Contextual Awareness:</strong><br />
+                      ConductorOS’ sensor fusion enables systems to understand their
+environment more completely and from multiple angles and dimensions. This provides
+enhanced contextual and situational awareness to the operator.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>4. Algorithmic Efficiency:</strong><br />
+                      Efficient processing of sensor data is key to real-time applications.
+ConductorOS enables sophisticated algorithms, such as Kalman filters or neural networks, to
+efficiently and effectively integrate data in a way that supports rapid decision-making.
                     </p>
                   </div>
                 </div>
