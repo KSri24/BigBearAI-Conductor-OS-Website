@@ -48,8 +48,12 @@ const diagram = () => {
         <div className="circle circle-1"></div>
         <div className="overlay">
           <div className="overlay-text">
-            <h2>Hover Text 1</h2>
-            <p>This is some dummy text that appears when you hover over circle 1. You can add more text here.</p>
+            <h2>Integration of Multiple Technologies, Sensors, and Systems</h2>
+            <p>This section emphasizes the integration of diverse technologies, systems, and sensors within ConductorOS. 
+                By connecting satellite, drone, cloud, and edge computing platforms, ConductorOS enables seamless data 
+                orchestration and AI deployment. This interconnected system enhances situational awareness and 
+                decision-making by processing and analyzing data from multiple sources in real-time, ensuring efficient 
+                and effective operations across various environments.</p>
           </div>
         </div>
 
@@ -57,8 +61,11 @@ const diagram = () => {
         <div className="circle circle-2"></div>
         <div className="overlay">
           <div className="overlay-text">
-            <h2>Hover Text 2</h2>
-            <p>This is some dummy text that appears when you hover over circle 2. You can add more text here.</p>
+            <h2>Cloud Computing and AI Deployment</h2>
+            <p>This part focuses on the deployment of AI models using cloud services like AWS, Google Cloud, and Azure. 
+                ConductorOS facilitates seamless orchestration and scaling of AI/ML models across these platforms. 
+                It ensures that AI operations are adaptable and efficient, allowing for rapid deployment and integration 
+                of diverse AI systems and data sources.</p>
           </div>
         </div>
 
@@ -66,8 +73,11 @@ const diagram = () => {
         <div className="circle circle-3"></div>
         <div className="overlay">
           <div className="overlay-text">
-            <h2>Hover Text 3</h2>
-            <p>This is some dummy text that appears when you hover over circle 3. You can add more text here.</p>
+            <h2>Operations Center and Data Management</h2>
+            <p>This area represents the central operations hub where data is monitored and managed. ConductorOS 
+                streamlines data orchestration, ensuring that data from various sources is integrated and accessible. 
+                This enables operators to make informed decisions quickly, optimizing performance and reducing inefficiencies 
+                in complex environments.</p>
           </div>
         </div>
 
@@ -75,8 +85,11 @@ const diagram = () => {
         <div className="circle circle-4"></div>
         <div className="overlay">
           <div className="overlay-text">
-            <h2>Hover Text 4</h2>
-            <p>This is some dummy text that appears when you hover over circle 4. You can add more text here.</p>
+            <h2>Edge Computing with NVIDIA and Arm</h2>
+            <p>This section illustrates the use of NVIDIA and Arm technologies for edge computing. ConductorOS supports 
+                distributed computing, allowing AI inference to occur where data is collected. This edge-first approach 
+                minimizes latency and power consumption, enabling rapid, real-time decision-making in dynamic and 
+                resource-constrained environments.</p>
           </div>
         </div>
 
@@ -84,8 +97,13 @@ const diagram = () => {
         <div className="circle circle-5"></div>
         <div className="overlay">
           <div className="overlay-text">
-            <h2>Hover Text 5</h2>
-            <p>This is some dummy text that appears when you hover over circle 5. You can add more text here.</p>
+            <h2>Centralized Orchestration Hub</h2>
+            <p>This section represents the core functionality of ConductorOS, which connects and coordinates all nodes 
+                in the system. It acts as a centralized hub that facilitates seamless communication and data flow between 
+                different systems and sensor integrations, cloud computing platforms, operations centers, and edge 
+                computing devices. By enabling interoperability and real-time data processing, this hub ensures efficient 
+                and effective AI deployment across diverse environments, enhancing decision-making 
+                and operational efficiency.</p>
           </div>
         </div>
       </Section>

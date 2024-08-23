@@ -47,7 +47,7 @@ const Contact = () => {
             Joshua Cancio and I, Sriram Koduru, worked as DoD OUSD Technology Readiness Assessors for multiple technologies, including BigBear AI's Conductor OS, during the T-REX 24-2 event this past summer.
             During the assessment and documentation process, we noticed that there was a gap in knowledge regarding software applications and how to assess them. So Josh and I decided that we could use
             our Computer Science background to serve as Software SMEs to help the other assessors formulate an assessment plan. We were able to help form relevant and targeted measures of performance 
-            and effectiveness for assessments. Lastly, we decided to create a website with an interactive diagram as well to help better bridge the gap in knowledge for Conductor OS capabilities.
+            and effectiveness. Lastly, we decided to create this website with an interactive diagram to help visually present the capabilities of Conductor OS.
           </p>
         </div>
         <img className="image" src={image} width="550" height="730" alt="Conductor OS Diagram" />
