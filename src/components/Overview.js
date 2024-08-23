@@ -22,6 +22,12 @@ const Overview = () => {
     }
   };
 
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleExpandToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -53,10 +59,10 @@ const Overview = () => {
   return (
     <div className="overview">
       <Section
-        className="section-1"
+        className={`section-1 ${isExpanded ? 'expanded' : ''}`}
         sectionRef={(el) => (sectionRefs.current[0] = el)}
       >
-        <h2 className="heading">The Challenge</h2>
+        <h2>The Challenge</h2>
         <p>
           Massive amounts of data are available to be leveraged by operators to increase
           situational awareness and make critical decisions; however, this data is typically
@@ -65,6 +71,22 @@ const Overview = () => {
           incompatible systems, lack of open data formats, and intermittent communications
           lead to significant delays in critical data availability.
         </p>
+        <button onClick={handleExpandToggle} className="expand-toggle">
+          {isExpanded ? 'See Less' : 'See More'}
+        </button>
+        {isExpanded && (
+          <div className="expanded-content">
+            <p>
+              In addition, the current state of sensor fusion is very limited with respect to data processing at
+              the edge. The current path typically requires sending data from the sensor to an operations
+              center for analysis and fusion, and then sending results and insights back to the very edge
+              location the data originated from. These hop-skip communications add time, power, and
+              computational costs – and significantly delay in time to action in theater. True whole-of-
+              environment decisions cannot be made in this current state, and the recent progress with
+              AI/ML models cannot be realized with the vendor-locked battlefield we face today.
+            </p>
+          </div>
+        )}
       </Section>
 
       <Section
@@ -72,22 +94,33 @@ const Overview = () => {
         sectionRef={(el) => (sectionRefs.current[1] = el)}
       >
         <div className="text-content">
-          <h2 className="heading">The Solution</h2>
-          <p className="heading">
-            ConductorOS (cOS) software runs as a distributed system for AI inference to occur
-            where the data is collected, so that key information and alerts can be provided to the
-            operator in real-time for critical decision-making. It enables operators to make rapid
-            decisions in complex environments at the edge by providing the orchestration of
-            third-party sensors, data, and AI/ML in near real-time.
-          </p>
+          <div className="heading">
+            <h2>The Solution</h2>
+            <p>
+              ConductorOS (cOS) software runs as a distributed system for AI inference to occur
+              where the data is collected, so that key information and alerts can be provided to the
+              operator in real-time for critical decision-making. It enables operators to make rapid
+              decisions in complex environments at the edge by providing the orchestration of
+              third-party sensors, data, and AI/ML in near real-time.
+            </p>
+          </div>
           <div className="dropdown-container">
-            <button onClick={() => handleToggle('AI')} className="dropdown-toggle">
+            <button
+              onClick={() => handleToggle('AI')}
+              className={`dropdown-toggle ${activeSection === 'AI' ? 'active' : ''}`}
+            >
               AI Orchestration
             </button>
-            <button onClick={() => handleToggle('Data')} className="dropdown-toggle">
+            <button
+              onClick={() => handleToggle('Data')}
+              className={`dropdown-toggle ${activeSection === 'Data' ? 'active' : ''}`}
+            >
               Data Orchestration
             </button>
-            <button onClick={() => handleToggle('Sensor')} className="dropdown-toggle">
+            <button
+              onClick={() => handleToggle('Sensor')}
+              className={`dropdown-toggle ${activeSection === 'Sensor' ? 'active' : ''}`}
+            >
               Sensor Fusion
             </button>
           </div>
@@ -128,8 +161,78 @@ const Overview = () => {
                 </div>
               </div>
             )}
-            {activeSection === 'Data' && <p>Here's some exciting info about Data Orchestration!</p>}
-            {activeSection === 'Sensor' && <p>Discover the amazing world of Sensor Fusion here!</p>}
+            {activeSection === 'Data' && (
+              <div className="ai-content">
+                <div className="ai-content-grid">
+                  <div className="ai-item">
+                    <p>
+                      <strong>1. Integration of Multiple AI Models and Systems:</strong><br />
+                      ConductorOS combines different AI models, such as machine learning, natural language processing, 
+                      and computer vision systems, to work together seamlessly. The orchestration ensures that data flows 
+                      between these systems occur in a coordinated manner, optimizing performance and reducing inefficiencies.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>2. Resource Allocation and Management:</strong><br />
+                      Efficient management of computational resources, such as CPU, GPU, and memory resources, is a crucial 
+                      component. ConductorOS allocates these edge resources judiciously to various AI tasks to maximize 
+                      throughput and minimize cost and latency.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>3. Scaling and Adaptability:</strong><br />
+                      ConductorOS can scale to meet the demands of different environments and adapt to changing conditions 
+                      in real-time, making it highly flexible for various applications.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>4. Monitoring and Maintenance:</strong><br />
+                      Continuous monitoring and proactive maintenance ensure that AI systems remain operational and perform 
+                      at their best, with minimal downtime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+            {activeSection === 'Sensor' && (
+              <div className="ai-content">
+                <div className="ai-content-grid">
+                  <div className="ai-item">
+                    <p>
+                      <strong>1. Integration of Multiple AI Models and Systems:</strong><br />
+                      ConductorOS combines different AI models, such as machine learning, natural language processing, 
+                      and computer vision systems, to work together seamlessly. The orchestration ensures that data flows 
+                      between these systems occur in a coordinated manner, optimizing performance and reducing inefficiencies.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>2. Resource Allocation and Management:</strong><br />
+                      Efficient management of computational resources, such as CPU, GPU, and memory resources, is a crucial 
+                      component. ConductorOS allocates these edge resources judiciously to various AI tasks to maximize 
+                      throughput and minimize cost and latency.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>3. Scaling and Adaptability:</strong><br />
+                      ConductorOS can scale to meet the demands of different environments and adapt to changing conditions 
+                      in real-time, making it highly flexible for various applications.
+                    </p>
+                  </div>
+                  <div className="ai-item">
+                    <p>
+                      <strong>4. Monitoring and Maintenance:</strong><br />
+                      Continuous monitoring and proactive maintenance ensure that AI systems remain operational and perform 
+                      at their best, with minimal downtime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </Section>
