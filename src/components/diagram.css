@@ -47,12 +47,17 @@
   height: 150px;
   border-radius: 50%;
   background-color: #3498db;
+  opacity: .25;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-left: -19.7rem;
+  margin-top: -16rem;
   cursor: pointer;
   z-index: 2;
+  width: 240px;
+  height: 230px;
 }
 
 /* The overlay that covers the rest of the screen */
@@ -100,8 +105,4 @@
     font-size: 1.2rem;
   }
 
-  .circle {
-    width: 100px;
-    height: 100px;
-  }
 }
