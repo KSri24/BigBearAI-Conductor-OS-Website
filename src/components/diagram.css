@@ -41,23 +41,61 @@
   height: 100vh;
 }
 
-/* Circular element */
+/* Circular elements */
 .circle {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   background-color: #3498db;
-  opacity: .25;
+  opacity: .4;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-left: -19.7rem;
-  margin-top: -16rem;
   cursor: pointer;
   z-index: 2;
-  width: 240px;
-  height: 230px;
+  transition: opacity 0.5s ease;
+}
+
+/* Circle positioning and unique classes for circles 1-5 */
+.circle-1 {
+  margin-left: -19.5rem;
+  margin-top: -16.2rem;
+  width: 237px;
+  height: 224px;
+  opacity: 0;
+}
+
+.circle-2 {
+  margin-left: 19.8rem;
+  margin-top: -16.2rem;
+  width: 237px;
+  height: 224px;
+  opacity: 0;
+}
+
+.circle-3 {
+  margin-left: -19.57rem;
+  margin-top: 13.25rem;
+  width: 237px;
+  height: 224px;
+  opacity: 0;
+}
+
+.circle-4 {
+  margin-left: 19.74rem;
+  margin-top: 13.23rem;
+  width: 237px;
+  height: 224px;
+  opacity: 0;
+}
+
+.circle-5 {
+  margin-left: .2rem;
+  margin-top: -1.47rem;
+  width: 590px;
+  height: 490px;
+  opacity: 0;
 }
 
 /* The overlay that covers the rest of the screen */
@@ -89,7 +127,7 @@
   transition: opacity 0.5s ease;
 }
 
-/* Show the overlay and text only when the circle is hovered */
+/* Show the overlay and text only when a circle is hovered */
 .circle:hover + .overlay {
   opacity: 1;
   visibility: visible;
@@ -104,5 +142,5 @@
   .overlay-text {
     font-size: 1.2rem;
   }
-
 }
+

@@ -38,6 +38,7 @@ p {
 /* Align the heading and text without absolute positioning */
 /* Contact Section Styling */
 .contact_section {
+    margin-top: 0rem;
     background-color: #000000;
     color: #ffffff;
     padding: 5rem; /* Add padding to avoid content being too close to the edges */
@@ -45,6 +46,7 @@ p {
     flex-direction: row; /* Align items in a row (side by side) */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between the text and image */
+    margin-bottom: -2.5rem;
 }
 
 /* Optional: Styling for section content */
