@@ -43,9 +43,9 @@ const diagram = () => {
       <Section className="diagram_section-1">
         <h2 className='N'>Interactive Diagram</h2>
 
-        <img src={image} width="1000" height="800" />
+        <img className="diagramImage" src={image} width="950" height="800" />
 
-        <p className='dtext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        {/* <p className='dtext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
       </Section>
 
     </div>

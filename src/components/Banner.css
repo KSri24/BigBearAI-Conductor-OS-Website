@@ -54,7 +54,7 @@
   color: white;
   text-align: center;
   font-size: 4rem;
-
+  opacity: 1;
   font-family: Arial, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
 }
