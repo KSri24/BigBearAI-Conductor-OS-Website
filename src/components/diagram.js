@@ -41,13 +41,20 @@ const diagram = () => {
   return (
     <div className="diagram">
       <Section className="diagram_section-1">
-        <h2 className='N'>Interactive Diagram</h2>
-
-        <img className="diagramImage" src={image} width="950" height="800" />
-
-        {/* <p className='dtext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
+        <h2 className="dHeading">Interactive Diagram</h2>
+        <img className="diagramImage" src={image} width="900" height="730" alt="Diagram" />
       </Section>
 
+      {/* Circular hover section */}
+      <div className="hover-area">
+        <div className="circle"></div>
+        <div className="overlay">
+          <div className="overlay-text">
+            <h2>Hover Text</h2>
+            <p>This is some dummy text that appears when you hover over the circle. You can add more text here.</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

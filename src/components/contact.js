@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './contact.css';
+import image from '../media/IMG_4775.png';
 
 const Section = ({ children, className }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,6 +47,8 @@ const contact = () => {
                                 our Computer Science background to serve as Software SME's to help the other assessors formulate an assessment plan. We were able to help form relevant and targeted measures of performance 
                                 and effectiveness for assessments. Lastly, we decided to create a website with an interactive diagram as well to help better bridge the gap in knowledge for Conductor OS capabilities.</p>
       </Section>
+
+      <img className="image" src={image} width="550" height="730" />
 
     </div>
   );
