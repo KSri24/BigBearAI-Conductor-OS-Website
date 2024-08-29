@@ -16,7 +16,7 @@ function Footer() {
             <p><span>srikoduru@hotmail.com</span><span>linkedin.com/in/sriramkoduru </span><span>571-208-6845</span></p>
         </div>  
         <p className="resume">
-                <span><a href="https://drive.google.com/file/d/1m9zvLsMuKa7Q-mVVdXkWaIu3uWcOl8t2/view?usp=sharing" 
+                <span><a href="https://docs.google.com/document/d/1d05pxZF_s_pA92GCMht-8y242I7EU1yStMv5z1v3Xy8/edit?usp=sharing" 
    target="_blank" 
    rel="noopener noreferrer" 
    class="resume-button">

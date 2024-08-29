@@ -11,7 +11,7 @@ export default function Banner() {
 
       <div className="banner-text">
           <h1 className='Title'>Conductor OS</h1>
-          <p className='TitleText'>Orchestrating AI and Data for the Future</p>
+          <p className='TitleText'>Orchestrating AI and Data at the Edge</p>
       </div>
 
       <div className='overlay' />
